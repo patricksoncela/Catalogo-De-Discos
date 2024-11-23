@@ -51,12 +51,24 @@ public class Disco {
         this.faixas.remove(faixa);
     }
 
+    public Artista getArtista() {
+        return artista;
+    }
+
+    public void setArtista(Artista artista) {
+        this.artista = artista;
+    }
+
+
+
+    @Override
     public String toString(){
-        return "|Título: " + titulo +
-                "\n|Lançamento: " + lancamento +
-                "\n|Faixas: " + faixas +
-                "\n|Artista: " + artista +
-                "\n|---------------------------------------------------------|";
+        return "Título: " + titulo +
+                "\nLançamento: " + lancamento +
+                "\nFaixas: " + faixas +
+                "\nArtista: " + (artista != null ? artista.toString() : "N/A") +
+                "\n|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|" +
+                "\n";
     }
 
 }
