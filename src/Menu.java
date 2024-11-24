@@ -1,4 +1,9 @@
+import java.util.Scanner;
+
 public class Menu {
+    private static Scanner scanner = new Scanner(System.in);
+
+
     public static void mostrarMenu(){
         System.out.println("|==== CATÁLOGO DE DISCOS ====|");
         System.out.println("1 - Listar discos disponíveis");

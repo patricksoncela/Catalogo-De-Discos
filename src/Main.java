@@ -33,8 +33,19 @@ public class Main {
                 case 2:
                     catalogo.cadastrarDisco();
                     break;
-            }
+                case 3:
+                    catalogo.cadastrarArtista();
+                    break;
+                case 4:
+                    catalogo.associarArtistaADisco();
+                    break;
+                case 5:
 
+                    break;
+                case 6:
+                    catalogo.removerDiscoOuArtista();
+                    break;
+            }
         } while (opcao != 0);
         System.out.println("Saindo...");
     }
