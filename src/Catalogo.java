@@ -150,6 +150,7 @@ public class Catalogo {
             }
     
         } else if (escolha.equals("artista")) {
+            listarArtistas();
             System.out.println("Digite o nome do artista que deseja editar:");
             String nomeArtista = scanner.nextLine();
             Artista artista = buscarArtista(nomeArtista);

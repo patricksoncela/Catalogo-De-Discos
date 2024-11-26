@@ -2,9 +2,9 @@ public class Artista {
     private String nomeArtista;
     private String genero;
 
-    public Artista(String genero, String nomeArtista) {
-        this.genero = genero;
+    public Artista(String nomeArtista, String genero) {
         this.nomeArtista = nomeArtista;
+        this.genero = genero;
     }
 
     public String getNomeArtista() {
