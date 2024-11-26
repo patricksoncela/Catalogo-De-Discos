@@ -11,16 +11,24 @@ public class Main {
     public static void main(String[] args) {
         int opcao;
 
-        Disco d1 = new Disco("Album 1", 2023);  //Disco criado sem faixas, sendo adicionadas posteriormente
-        d1.adicionarFaixa("Faixa 1");
-        d1.adicionarFaixa("Faixa 2");
+        Disco d1 = new Disco("Graduation", 2007);  //Disco criado sem faixas, sendo adicionadas posteriormente
+        Catalogo.discos.add(d1);
+        d1.adicionarFaixa("Homecoming");
+        d1.adicionarFaixa("I Wonder");
+        d1.adicionarFaixa("Flashing Lights");
+        Artista kanyeWest = new Artista("Kanye West", "Hip-Hop/Rap");
+        Catalogo.artistas.add(kanyeWest);
+
 
         List<String> faixas = new ArrayList<String>();
-        faixas.add("Faixa 1");
-        faixas.add("Faixa 2");
-        faixas.add("Faixa 3");
+        faixas.add("Death On Two Legs");
+        faixas.add("Love Of My Life");
+        faixas.add("Bohemian Rhapsody");
 
-        Disco d2 = new Disco("Album 2", 2023, faixas);  //Disco criado já com faixas
+        Disco d2 = new Disco("A Night At The Opera", 1975, faixas);  //Disco criado já com faixas
+        Catalogo.discos.add(d2);
+        Artista queen = new Artista("Queen","Rock");
+        Catalogo.artistas.add(queen);
 
         do {
             Menu.mostrarMenu(); //chama o menu

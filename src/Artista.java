@@ -24,6 +24,7 @@ public class Artista {
     }
 
     public String toString() {
-        return "Nome: " + nomeArtista +  "  |Genero: " + genero;
+        return "" + nomeArtista +
+                "\nGenero: " + genero;
     }
 }
