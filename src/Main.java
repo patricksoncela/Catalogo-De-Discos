@@ -40,7 +40,7 @@ public class Main {
                     catalogo.associarArtistaADisco();
                     break;
                 case 5:
-
+                    catalogo.editarDiscoOuArtista();
                     break;
                 case 6:
                     catalogo.removerDiscoOuArtista();
